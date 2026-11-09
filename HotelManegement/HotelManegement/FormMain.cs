@@ -34,7 +34,8 @@ namespace HotelManagement
 
         private void button13_Click(object sender, EventArgs e)
         {
-            HienThiDangPhatTrien("Thống kê");
+            Form formCon = new ThongKe.FormThongKe();
+            LoadFormCon(formCon);
         }
 
         private void btnTrangChu_Click(object sender, EventArgs e)
@@ -45,7 +46,8 @@ namespace HotelManagement
 
         private void button5_Click(object sender, EventArgs e)
         {
-            HienThiDangPhatTrien("Danh sách tài khoản");
+            Form formCon = new TaiKhoan.FormDanhSachTaiKhoan();
+            LoadFormCon(formCon);
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -95,12 +97,14 @@ namespace HotelManagement
 
         private void button9_Click(object sender, EventArgs e)
         {
-            HienThiDangPhatTrien("Danh sách đặt phòng");
+            Form formCon = new PhieuThue.FormDanhSachPhieuThue();
+            LoadFormCon(formCon);
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            HienThiDangPhatTrien("Danh sách hóa đơn");
+            Form formCon = new HoaDon.FormDanhSachHoaDon();
+            LoadFormCon(formCon);
         }
 
         private void FormMain_Load(object sender, EventArgs e)
